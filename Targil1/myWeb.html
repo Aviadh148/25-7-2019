@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html ng-app="webApp">
+<head>
+    <title>Web</title>
+     <script src="angular.js"></script>
+    <script src="bootstrap.js"></script>
+    <script src="importCtrl.js"></script>
+    <script src="request.service.js"></script>
+    <script src="data.service.js"></script>
+    <script src="url.service.js"></script>
+</head>
+<body >
+    <div ng-controller="importCtrl">
+        <p ng-repeat="per in db.warp.results">{{per}}</p>
+        <p ng-repeat="pe in db.warp.info">{{pe}}</p>
+    </div>
+    <br>
+</body>
+</html>
